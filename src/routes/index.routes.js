@@ -1,6 +1,8 @@
 const express = require('express')
 const router = express.Router()
 
-router.use('/client', require('./client.routes'))
+router.use('/clients', require('./client.routes'))
+router.use('/sales', require('./sale.routes'))
+router.use('/items', require('./item.routes'))
 
 module.exports = router

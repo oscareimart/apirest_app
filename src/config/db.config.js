@@ -8,7 +8,7 @@ const sequelizeConn = new Sequelize(env.NAME_DB, env.USER_DB, env.PASSWORD_DB, {
 
 const db = {}
 
-// db.Sequelize = Sequelize
-// db.sequelize = sequelize
+db.Sequelize = Sequelize
+db.sequelize = sequelizeConn
 
-module.exports = { Sequelize, sequelizeConn }
+module.exports = db
